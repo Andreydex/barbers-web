@@ -1,0 +1,112 @@
+:root {
+  --dorado: #d4af37;
+  --oscuro: #1a1a1a;
+  --negro: #000;
+  --gris-card: #2a2a2a;
+}
+
+body {
+  margin: 0;
+  background-color: var(--oscuro);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+.navbar {
+  width: 100%;
+  padding: 20px 50px;
+  background: var(--negro);
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+.nav-section {
+  flex: 1; 
+  display: flex;
+}
+
+.nav-section.center {
+  justify-content: center;
+}
+
+.nav-section.right {
+  justify-content: flex-end;
+}
+
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--dorado);
+}
+
+.hero {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+              url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=2074&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+}
+
+.btn-cita {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: var(--dorado);
+  color: black;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn-cita:hover {
+  transform: scale(1.05);
+  background-color: #f1c40f;
+}
+
+.servicios-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.grid-servicios {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+/* src/app/globals.css */
+
+.ubicacion-section {
+  padding: 60px 20px;
+  background-color: var(--negro);
+  text-align: center;
+}
+
+.mapa-container {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid var(--dorado);
+  border-radius: 15px;
+  overflow: hidden; /* Para que las esquinas del mapa se redondeen */
+  line-height: 0; /* Quita espacios extra debajo del iframe */
+}
