@@ -51,7 +51,7 @@ export default function Home() {
       
       <section className="ubicacion-section">
   <h2 style={{ color: 'var(--dorado)' }}>Nuestra Ubicación</h2>
-  <p>Visítanos estamos en Puerto Vallarta</p>
+  <p>Visítanos estamos aquí</p>
   
   <div className="mapa-container">
     <iframe 
