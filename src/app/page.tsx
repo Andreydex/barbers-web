@@ -4,10 +4,17 @@ import ServiceCard from './components/ServiceCard';
 
 export default function Home() {
   const servicios = [
+<<<<<<< HEAD
     { id: 1, nombre: "Corte Clásico", precio: "$150.00 mxn" },
     { id: 2, nombre: "Barba Premium", precio: "$135.00 mxn" },
     { id: 3, nombre: "Combo Imperial", precio: "$250.00 mxn" },
     { id: 4, nombre: "Corte Infantil", precio: "$150.00 mxn" }
+=======
+    { id: 1, nombre: "Corte Clásico", precio: "$150.00$" },
+    { id: 2, nombre: "Barba Premium", precio: "$135.00$" },
+    { id: 3, nombre: "Combo Imperial", precio: "$250.00$" },
+    { id: 4, nombre: "Corte Infantil", precio: "$150.00$" }
+>>>>>>> c37beaaa9c2e4188757c9e925e48044e14fcaf7e
   ];
 
   const handleWhatsApp = () => {
@@ -34,7 +41,6 @@ export default function Home() {
         <h2 style={{ fontSize: '3rem' }}>ESTILO Y TRADICIÓN</h2>
         <p>Expertos en el arte de la barbería clásica.</p>
         
-        {/* AQUÍ ESTABA EL ERROR: Cambiamos el alert por handleWhatsApp */}
         <button className="btn-cita" onClick={handleWhatsApp}>
           AGENDAR CITA
         </button>
