@@ -12,7 +12,7 @@ export default function Home() {
 
   const handleWhatsApp = () => {
     const telefono = "523223282394"; 
-    const mensaje = encodeURIComponent("¡Hola Barber's! Me gustaría agendar una cita para un corte.");
+    const mensaje = encodeURIComponent("Me gustaría agendar una cita para un corte.");
     const url = `https://wa.me/${telefono}?text=${mensaje}`;
     
     window.open(url, '_blank'); 
